@@ -70,6 +70,6 @@ module.exports = {
     ]
   },
   devServer: {
-    host: 'js.lvh.me'
+    disableHostCheck: true
   },
 };
