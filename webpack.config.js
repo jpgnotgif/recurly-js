@@ -28,7 +28,10 @@ module.exports = {
             loader: 'babel-loader',
             options: {
               cacheDirectory: true,
-              plugins: ['@babel/plugin-transform-object-assign'],
+              plugins: [
+                '@babel/plugin-transform-object-assign',
+                '@babel/plugin-proposal-class-properties'
+              ],
               presets: [
                 ['@babel/preset-env', {
                   targets: {
