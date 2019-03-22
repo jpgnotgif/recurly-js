@@ -45,6 +45,10 @@ app.listen(port, () => {
   console.log(`ready on ${port}`);
 });
 
+/**
+ * Response functions
+ */
+
 function html (view) {
   return async ctx => {
     await ctx.render(`fixtures/${view}`);
@@ -68,6 +72,9 @@ async function postMessage (ctx) {
   });
 }
 
+/**
+ * Utility functions
+ */
 
 function fixture (ctx) {
   const f = require(`./fixtures${ctx.request.path}`);
