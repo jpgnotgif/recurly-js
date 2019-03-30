@@ -25,6 +25,7 @@
     "lodash.isfinite": "^3.3.2",
     "lodash.pick": "^4.4.0",
     "promise": "^8.0.2",
+    "qs": "^6.6.0",
     "tabbable": "^3.1.2",
     "to-slug-case": "^1.0.0",
     "uuid": "^3.3.2"
@@ -79,7 +80,6 @@
     "mini-css-extract-plugin": "^0.5.0",
     "mocha": "^4.1.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "qs": "^6.6.0",
     "sinon": "^7.2.3",
     "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack": "^4.29.4",
