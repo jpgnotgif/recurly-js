@@ -1,7 +1,8 @@
 import assert from 'assert';
-import {isUuidv4} from './support/helpers';
-import {Recurly} from '../lib/recurly';
+import { isUuidv4 } from './support/helpers';
+import { Recurly } from '../lib/recurly';
 import CheckoutPricing from '../lib/recurly/pricing/checkout';
+import Elements from '../lib/recurly/elements';
 import SubscriptionPricing from '../lib/recurly/pricing/subscription';
 
 describe('Recurly', () => {
@@ -56,4 +57,10 @@ describe('Recurly', () => {
       assert(recurly.Pricing() instanceof SubscriptionPricing);
     });
   });
+
+  describe('Elements factory', () => {
+    it('has an Elements factory at recurly.Elements', function () {
+      assert(recurly.Elements() instanceof Elements);
+    });
+  })
 });
