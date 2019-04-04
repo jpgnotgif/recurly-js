@@ -14,6 +14,7 @@ var staticConfig = {
     'ChromeHeadless'
     // 'ChromeDebug'
     // 'FirefoxDebug'
+    // 'Safari'
     // 'VirtualBoxIE11Win7'
   ],
   singleRun: true,
