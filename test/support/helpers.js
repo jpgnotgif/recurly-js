@@ -85,3 +85,17 @@ export function stubAsNonMobileDevice () {
     this.mobileStubSandbox.restore()
   });
 }
+
+/**
+ * Creates a native browser Event
+ *
+ * @param {String} name
+ * @return {Event}
+ */
+export function createNativeEvent (name) {
+  if (typeof Event === 'function') return new Event(name);
+  // IE11 compatibility case
+  const event = window.document.createEvent('Event');
+  event.initEvent(name, true, true);
+  return event;
+}
