@@ -71,7 +71,6 @@ function runner (config) {
     reporters: reporters,
     logLevel: config.LOG_INFO,
     browsers: ['sl_' + BROWSER],
-    frameworks: frameworks(),
     sauceLabs: {
       testName: 'Recurly.js tests',
       recordVideo: true,
@@ -80,12 +79,6 @@ function runner (config) {
     customLaunchers: sauceBrowsers,
   }));
 };
-
-function frameworks () {
-  var frameworks = staticConfig.frameworks;
-  if (BROWSER === 'phantom') frameworks.push('phantomjs-shim');
-  return frameworks;
-}
 
 var server = require('./test/server');
 

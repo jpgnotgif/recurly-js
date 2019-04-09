@@ -55,11 +55,8 @@ var staticConfig = {
 };
 
 function runner (config) {
-  var frameworks = staticConfig.frameworks;
-  if (~staticConfig.browsers.indexOf('PhantomJS')) frameworks.push('phantomjs-shim');
   config.set(Object.assign({}, staticConfig, {
-    logLevel: config.LOG_INFO,
-    frameworks: frameworks
+    logLevel: config.LOG_INFO
   }));
 };
 
