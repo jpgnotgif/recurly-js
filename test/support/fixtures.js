@@ -1,4 +1,4 @@
-import {testBed} from './helpers';
+import { testBed } from './helpers';
 
 const elements = opts => `
   <form action="#" id="test-form">
